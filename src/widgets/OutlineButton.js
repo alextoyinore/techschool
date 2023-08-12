@@ -1,11 +1,17 @@
 import React from 'react'
 
-function OutlineButton({text, clicked, fontWeight, fontSize='1rem', icon}) {
+function OutlineButton({text, isSearch, clicked, fontWeight, fontSize='1rem', icon}) {
+  if(isSearch){
+    icon = 'fa fa-search'
+  }
+
   const styles = {
-    display: 'flex',
+    display: isSearch ? 'block' : 'flex',
     justifyContent: 'space-between',
     padding: '1rem 1rem',
     fontSize: fontSize,
+    fontWeight: fontWeight,
+    borderRadius: isSearch ? '0 .5rem .5rem 0' : '.5rem',
   }
 
   return (
@@ -14,8 +20,8 @@ function OutlineButton({text, clicked, fontWeight, fontSize='1rem', icon}) {
           style={icon && styles}
           onClick={clicked} 
           className='ts-btn-outline'>
-          <span>{text}</span>
-          <span className={icon}></span>
+         {!isSearch && <span>{text}</span>}
+            <span className={icon}></span>
       </button>
     </div>
     

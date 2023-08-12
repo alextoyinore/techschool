@@ -43,7 +43,12 @@ div{
     font-weight: light;
     cursor: pointer;
     text-transform: uppercase;
-    border-radius: .5rem;
+    transition: 1s ease-in-out;
+}
+
+.ts-btn:hover, input[type=submit]:hover{
+    background-image: linear-gradient(to right, rgb(4, 168, 113), rgb(22, 221, 154));
+    outline: 0;
 }
 
 .ts-btn-outline{
@@ -55,7 +60,7 @@ div{
     font-weight: light;
     cursor: pointer;
     text-transform: uppercase;
-    border-radius: .5rem;
+    transition: 1s ease-in-out;
 }
 
 .ts-btn-outline:hover{
@@ -67,7 +72,6 @@ div{
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
-    height: 2.75rem;
     font-size: 1rem;
     border: 0;
     outline: .01rem solid #ccc;
@@ -76,16 +80,16 @@ div{
     padding-inline-end: 1rem;
     border-radius: .5rem;
     color: rgb(80, 80, 80);
-    /* transition: width 0.4s ease-in-out; */
+    transition: 1s ease-in-out;
 }
 
 .ts-input:focus, .ts-input:hover {
     outline: .01rem solid rgb(35, 58, 234);
+    letter-spacing: .05rem;
 }
 
 .ts-input[type=password]:focus{
     font: 2rem;
-    letter-spacing: .05rem;
 }
 
 ::placeholder{
@@ -283,3 +287,4 @@ textarea{
 }
 
 /* End RadioGroup */
+

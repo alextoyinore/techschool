@@ -10,6 +10,7 @@ import TextArea from './widgets/TextArea';
 import CheckBoxGroup from './widgets/CheckBoxGroup';
 import RadioGroup from './widgets/RadioGroup';
 import OutlineButton from './widgets/OutlineButton';
+import SearchField from './widgets/SearchField';
 // import Loading from './widgets/Loading';
 
 function App() {
@@ -17,19 +18,22 @@ function App() {
   return (
     <div className="App">
       {/* <Loading /> */}
-      <InputField hintText='Username' />
-      <InputField hintText='Password' type='password' />
-      <Select data={items} hintText='Select brand...' />
+      <SearchField hintText='Search courses' /><br/>
+      <InputField hintText='Username' /><br/>
+      <InputField hintText='Password' type='password' /><br/>
+      <Select data={items} hintText='Select brand...' /><br/>
       <TextArea hintText='Address' />
       <br/>
       <CheckBoxGroup checkBoxList={items} labelText='Select which brand(s) are American?' />
       <br/>
       <RadioGroup radioList={items} name='brands' labelText='Which is the richest brand?' />
-      
+      <br/>
       <InputField type='submit' value='Submit'/>
       <br/>
       <Button text="Button" icon='fa fa-arrow-right' />
       <br/>
+      {/* <Button isSearch='true' />
+      <br/> */}
       <OutlineButton text='Outline Button' icon='fa fa-arrow-right'/>
     </div>
   );
