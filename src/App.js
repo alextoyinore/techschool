@@ -28,9 +28,9 @@ function App() {
       
       <InputField type='submit' value='Submit'/>
       <br/>
-      <Button text="Button" />
+      <Button text="Button" icon='fa fa-arrow-right' />
       <br/>
-      <OutlineButton text='Outline Button' />
+      <OutlineButton text='Outline Button' icon='fa fa-arrow-right'/>
     </div>
   );
 }
