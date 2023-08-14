@@ -5,7 +5,7 @@ function OutlineButton({text, isSearch, clicked, fontWeight, fontSize='1rem', ic
     icon = 'search'
   }
 
-  const styles = {
+  const outlineBtnStyle = {
     display: isSearch ? 'block' : 'flex',
     alignContent: 'center',
     alignItems: 'center',
@@ -14,12 +14,13 @@ function OutlineButton({text, isSearch, clicked, fontWeight, fontSize='1rem', ic
     fontSize: fontSize,
     fontWeight: fontWeight,
     borderRadius: isSearch ? '0 .5rem .5rem 0' : '.5rem',
+    outline: '1px solid',
   }
 
   return (
     <div>
       <button
-          style={icon && styles}
+          style={icon && outlineBtnStyle}
           onClick={clicked} 
           className='ts-btn-outline'>
          {!isSearch && <span>{text}</span>}

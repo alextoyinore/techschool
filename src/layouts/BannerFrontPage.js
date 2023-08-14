@@ -16,7 +16,7 @@ function BannerFrontPage({image=BannerBG}) {
     const frontBannerDecorationStyle = {
         width: '100%',
         height: '100%',
-        display: 'flex',
+        // display: 'flex',
         background: "url({bannerBG})"
     }
 
@@ -25,13 +25,36 @@ function BannerFrontPage({image=BannerBG}) {
         color:'white', 
         lineHeight: '4.6rem', 
         fontWeight: 'light',
-        marginTop: '4rem',
+        marginTop: '8rem',
         textAlign: 'center'
     }
 
     const fontBannerContentStyle = {
         width: '50%',
-        margin: 'auto'
+        margin: 'auto',
+        zIndex: '1',
+    }
+
+    const frontBannerContentImage = {
+
+        // width: '100%',
+        // height: '50vh',
+
+        img : {
+            display: 'block',
+            position: 'absolute',
+            opacity: '.05',
+            top: 0,
+            left: '10%',
+            margin: 'auto',
+            alignContent: 'center',
+            alignItems: 'center',
+            objectFit: 'cover',
+            height: '60%',
+            transform: 'rotate3d(1, 1, 1, 30deg)',
+            transformStyle: 'preserve-3d',
+            // scale: '2.0',
+        }
     }
 
   return (
@@ -44,9 +67,9 @@ function BannerFrontPage({image=BannerBG}) {
                 <br/><br/>
                 <SearchField hintText='Search Courses' />
             </div>
-            {/* <div style={frontBannerContentRightStyle}>
-                <img style={frontBannerContentRightStyle.img} alt='' src={image} />
-            </div> */}
+            <div style={frontBannerContentImage}>
+                <img style={frontBannerContentImage.img} alt='' src={image} />
+            </div>
         </div>
     </div>
   )

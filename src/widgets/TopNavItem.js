@@ -1,8 +1,8 @@
 import React from 'react'
 
-function TopNavItem({text, icon='expand_more', action}) {
+function TopNavItem({text, icon='expand_more', color, action}) {
     const topnavStyle = {
-        
+        color: color ,
     }
   return (
     <div style={topnavStyle} className='topnav-item'>

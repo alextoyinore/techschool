@@ -3,6 +3,7 @@ import TopNavItem from '../widgets/TopNavItem'
 import SearchField from '../widgets/SearchField'
 import SiteBrand from '../widgets/SiteBrand'
 import OutlineButton from '../widgets/OutlineButton'
+import Local from '../data/Local'
 
 function TopNav() {
     const topNavItemListStyle = {
@@ -40,22 +41,38 @@ function TopNav() {
         zIndex: '1',
     }
 
-    // data
-    const listItems = [
-        'Kids Zone', 'Students', 'Undergrads', 'For Women'
-    ]
+    const topLineNavStyle = {
+        width: '100%',
+        height: '1.75rem',
+        background: 'rgb(8, 71, 184)',
+        alignContent: 'center',
+        alignItems: 'center',
+    }
+
+    const topLineNavContentStyle = {
+        width: '45%',
+        margin: 'auto',
+        display: 'flex',
+        gap: '2rem',
+    }
 
 
   return (
     <div style={topnavContainerStyle}>
+        <div style={topLineNavStyle}>
+            <div style={topLineNavContentStyle}>
+                {Local.listItems.map((item) => <TopNavItem color='white' text={item} />)}
+            </div>
+        </div>
         <div style={topnavStyle}>
             <SiteBrand />
             {/* <div style={topnavSearchStyle}>
                 <SearchField hintText='Search for courses' />
             </div> */}
-            <div style={topNavItemListStyle}>
-                {listItems.map((item) => <TopNavItem text={item} />)}
-            </div>
+            
+            {/* <div style={topNavItemListStyle}>
+                {Local.authItems.map((item) => <TopNavItem text={item} />)}
+            </div> */}
             <div style={topnavCtaStyle}>
                 <OutlineButton text='Get Started' />
             </div> 

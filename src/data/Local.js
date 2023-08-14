@@ -68,6 +68,18 @@ const Local = {
             courseGrade: 'Intermediate',
             courseTitle: 'C Programming in the Digital Age'
           },
+          {
+            img: 'https://cdn.pixabay.com/photo/2017/05/10/19/29/robot-2301646_1280.jpg',
+            courseDuration: '12 months',
+            courseGrade: 'Beginner',
+            courseTitle: 'Artificial Intelligence with Python Tensor Flow'
+          },
+          {
+            img: 'https://cdn.pixabay.com/photo/2013/12/22/15/30/motherboard-232515_1280.jpg',
+            courseDuration: '18 months',
+            courseGrade: 'Beginner',
+            courseTitle: 'Electrical Electronics for Pre & Post Varsity'
+          },
       ],
       
       studentData : [
@@ -98,7 +110,17 @@ const Local = {
             courseGrade: 'Intermediate',
             courseTitle: 'Advanced Photoshop: Graphics Design in 2023'
         },
-      ]
+      ],
+
+       // data
+    listItems : [
+        'Kids Zone', 'For Students', 'For Undergrads', 'For Women'
+    ],
+
+    authItems : [
+        'Browse Programs',
+        '|', 'Login'
+    ]
 }
 
 export default Local
