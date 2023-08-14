@@ -6,7 +6,7 @@ function SiteBrand() {
         width: '10%',
 
         img : {
-            height: '2rem',
+            height: '1.5rem',
         }
     }
   return (

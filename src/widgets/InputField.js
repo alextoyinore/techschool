@@ -5,7 +5,7 @@ function InputField(
     ) {
       const styles = {
         borderRadius: isSearch ? '.5rem 0 0 .5rem' : '.5rem',
-        height: (type==='submit') ? '3.2rem' : '2.75rem'
+        height: (isSearch || type==='submit') ? '3.2rem' : '2.75rem'
       }
 
       const inputStyle = {

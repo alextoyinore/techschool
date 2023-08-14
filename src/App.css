@@ -6,9 +6,9 @@
 
 :root{
     --select-border: #ccc;
-    --select-focus: rgb(35, 58, 234);
+    --select-focus: rgb(8, 71, 184);
     --select-arrow: var(var(--select-border));
-    --form-control-color: rgb(35, 58, 234);
+    --form-control-color: rgb(8, 71, 184);
 }
 
 /* #root{
@@ -18,6 +18,11 @@
 h1, h2, h3, h4 {
     /* font-family: 'Montserrat', sans-serif; */
     font-weight: bold;
+}
+
+hr {
+    border: 0;
+    outline: .01rem solid #ddd;
 }
 
 div{
@@ -44,7 +49,7 @@ div{
     width: 100%;
     height: 3.25rem;
     border: 0;
-    background-image: linear-gradient(to right, rgb(18, 39, 197), rgb(35, 58, 234));
+    background-image: linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221));
     color: #fff;
     font-weight: light;
     cursor: pointer;
@@ -70,7 +75,7 @@ div{
 }
 
 .ts-btn-outline:hover{
-    background-image: linear-gradient(to right, rgb(18, 39, 197), rgb(35, 58, 234));
+    background-image: linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221));
     color: #fff;
 }
 
@@ -90,9 +95,9 @@ div{
 }
 
 .ts-input:focus, .ts-input:hover {
-    outline: .01rem solid rgb(35, 58, 234);
+    outline: .01rem solid rgb(11, 87, 221);
     letter-spacing: .05rem;
-    box-shadow: 0 0 1rem rgba(35, 58, 234, .2);;
+    box-shadow: 0 0 1rem rgba(11, 87, 221, .2);;
 }
 
 .ts-input[type=password]:focus{
@@ -178,7 +183,7 @@ textarea{
 }
 
 .ts-checkbox input:checked ~ .checkmark {
-    background-color: rgb(35, 58, 234);
+    background-color: rgb(11, 87, 221);
 }
 
 .checkmark::after{
@@ -249,7 +254,7 @@ textarea{
   
   /* When the radio button is checked, add a blue background */
   .ts-radio input:checked ~ .radiocheck {
-    background-color: rgb(35, 58, 234);
+    background-color: rgb(11, 87, 221);
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -302,11 +307,11 @@ textarea{
     place-content: center space-between; 
     align-items: center; 
     font-size: 1rem; 
-    font-weight: bold;
+    font-weight: light;
     cursor: pointer;
 }
 
 .topnav-item:hover:hover, .topnav-item:focus{
-    color: rgb(35, 58, 234);
+    color: rgb(11, 87, 221);
 }
 /* End Top Nav */

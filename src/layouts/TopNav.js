@@ -27,15 +27,27 @@ function TopNav() {
     }
 
     const topnavCtaStyle = {
-        width: '13%'
+        width: '15%'
     }
 
+    const topnavContainerStyle = {
+        width: '100%', 
+        position: 'fixed', 
+        left: '0', 
+        top:'0', 
+        background: 'white', 
+        boxShadow: '0 0 2rem #0003',
+        zIndex: '1',
+    }
+
+    // data
     const listItems = [
         'Kids Zone', 'Students', 'Undergrads', 'For Women'
     ]
 
+
   return (
-    <div style={{width: '100%', position: 'fixed', left: '0', top:'0', background: 'white', boxShadow: '0 0 2rem #0003',}}>
+    <div style={topnavContainerStyle}>
         <div style={topnavStyle}>
             <SiteBrand />
             {/* <div style={topnavSearchStyle}>

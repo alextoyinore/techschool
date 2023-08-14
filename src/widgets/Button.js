@@ -12,7 +12,7 @@ function Button({text, isSearch, clicked, fontWeight, fontSize='1rem', icon='che
     fontSize: fontSize,
     fontWeight: fontWeight,
     borderRadius: isSearch ? '0 .5rem .5rem 0' : '.5rem',
-    height: isSearch && '2.8rem'
+    height: isSearch && '3.3rem'
   }
 
   return (
