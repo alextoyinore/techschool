@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchField from '../widgets/SearchField'
-import BannerBG from '../../assets/images/bannerBG.png'
+import BannerBG from '../assets/images/bannerBG.png'
 
 function BannerFrontPage({image=BannerBG}) {
     const frontBannerStyle = {

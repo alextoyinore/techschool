@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import '../assets/styles/Loading.css'
+import './assets/styles/Loading.css'
 import TopNav from './layouts/TopNav';
 import BannerFrontPage from './layouts/BannerFrontPage';
 import CardSlider from './layouts/CardSlider';

@@ -2,7 +2,7 @@ import React from 'react'
 
 function CourseCardVertical({cardData}) {
     const cardStyle = {
-        width: '12rem',
+        width: '11rem',
         height: '16rem',
         border: '1px solid #eee',
         borderRadius: '.3rem',

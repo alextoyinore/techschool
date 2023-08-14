@@ -6,7 +6,7 @@ function CardSlider({title, data}) {
     
     const cardSlider = {
         display: 'flex', 
-        gap:'1.2rem', 
+        gap:'2.2rem', 
         flexWrap: 'wrap', 
         justifyContent: 'flex-start'
     }
