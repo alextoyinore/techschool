@@ -54,6 +54,8 @@ function TopNav() {
         margin: 'auto',
         display: 'flex',
         gap: '2rem',
+        alignContent: 'center',
+        alignItems: 'center',
     }
 
 
@@ -66,13 +68,6 @@ function TopNav() {
         </div>
         <div style={topnavStyle}>
             <SiteBrand />
-            {/* <div style={topnavSearchStyle}>
-                <SearchField hintText='Search for courses' />
-            </div> */}
-            
-            {/* <div style={topNavItemListStyle}>
-                {Local.authItems.map((item) => <TopNavItem text={item} />)}
-            </div> */}
             <div style={topnavCtaStyle}>
                 <OutlineButton text='Get Started' />
             </div> 
