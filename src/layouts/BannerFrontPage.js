@@ -16,8 +16,6 @@ function BannerFrontPage({image=BannerBG}) {
     const frontBannerDecorationStyle = {
         width: '100%',
         height: '100%',
-        // display: 'flex',
-        background: "url({bannerBG})"
     }
 
     const h1Style = {
@@ -45,7 +43,7 @@ function BannerFrontPage({image=BannerBG}) {
             position: 'absolute',
             opacity: '.05',
             top: 0,
-            left: '10%',
+            left: '2.5%',
             margin: 'auto',
             alignContent: 'center',
             alignItems: 'center',
@@ -53,7 +51,7 @@ function BannerFrontPage({image=BannerBG}) {
             height: '60%',
             transform: 'rotate3d(1, 1, 1, 30deg)',
             transformStyle: 'preserve-3d',
-            // scale: '2.0',
+            scale: '1.5',
         }
     }
 
