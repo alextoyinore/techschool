@@ -9,10 +9,11 @@ function Select({data, labelText, id, hintText, handleChange}) {
     <div>
           {labelText && <label htmlFor={id}>{labelText}</label>}
           <select
+          placeholder='Select brand'
           style={styles}
           className='ts-select'
           onChange={handleChange}>
-            <option className='hint'>{hintText}</option>
+            <option className='hint' selected><span style={{color:'#ccc'}}>{hintText}</span></option>
             {dataItems}
           </select>
     </div>

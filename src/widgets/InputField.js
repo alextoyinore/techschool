@@ -5,10 +5,14 @@ function InputField(
     ) {
       const styles = {
         borderRadius: isSearch ? '.5rem 0 0 .5rem' : '.5rem',
-        height: (isSearch || (type==='submit')) ? '3.2rem' : '2.75rem'
+        height: (type==='submit') ? '3.2rem' : '2.75rem'
+      }
+
+      const inputStyle = {
+        width: '100%'
       }
   return (
-    <div>
+    <div style={inputStyle}>
         { labelText && <label className='labelText' htmlFor={id}>{labelText}</label>}
         <input 
             style={styles}

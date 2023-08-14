@@ -5,7 +5,7 @@ function TextArea(
     ) {
   return (
     <div>
-        <label htmlFor={id}>{labelText}</label><br/>
+        {labelText && <label htmlFor={id}>{labelText}</label>}
         <textarea 
             className='ts-input'
             placeholder={hintText}
