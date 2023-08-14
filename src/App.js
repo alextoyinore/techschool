@@ -27,7 +27,7 @@ function App() {
       </Center>
       <br/> <hr/> <br/>
       <ShowCase 
-      cardSliderList={Local.studentData} 
+      cardSliderList={Local.showCaseData} 
       titleMessage='Expand your career opportunites'
       excerpt={AppConstants.exploreDummy}
       ctaText='Explore Now' />

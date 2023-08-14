@@ -112,6 +112,42 @@ const Local = {
         },
       ],
 
+      showCaseData : [
+        {
+          img: 'https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_1280.jpg',
+          courseDuration: '6 Months',
+          courseGrade: 'Intermediate',
+          courseTitle: 'Introduction to Python Programming'
+        },
+      
+        {
+            img: 'https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg',
+            courseDuration: '3 Months',
+            courseGrade: 'Advanced',
+            courseTitle: 'JavaScript for non-programmers 2023'
+        },
+      
+        {
+            img: 'https://cdn.pixabay.com/photo/2020/04/25/12/14/circle-5090539_1280.jpg',
+            courseDuration: '2 Weeks',
+            courseGrade: 'Beginner',
+            courseTitle: 'Data Structure and Algorithm with C++'
+        },
+      
+        {
+            img: 'https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345_1280.jpg',
+            courseDuration: '8 months',
+            courseGrade: 'Intermediate',
+            courseTitle: 'Advanced Photoshop: Graphics Design in 2023'
+        },
+        {
+            img: 'https://cdn.pixabay.com/photo/2016/01/13/10/08/tech-1137487_1280.jpg',
+            courseDuration: '3 months',
+            courseGrade: 'Advanced',
+            courseTitle: 'Advanced Photoshop: Graphics Design in 2022'
+        },
+      ],
+
        // data
     listItems : [
         'Kids Zone', 'For Students', 'For Undergrads', 'For Women'

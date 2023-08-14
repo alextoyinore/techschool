@@ -8,7 +8,7 @@ import OutlineButton from '../widgets/OutlineButton'
 function ShowCase({cardSliderList, titleMessage, excerpt, ctaText}) {
     const showCaseContainer = {
         height: '35rem',
-        border: '1px solid #ccc',
+        border: '1px solid #eee',
         borderRadius: '.5rem',
         padding: '2rem',
     }
@@ -34,7 +34,7 @@ function ShowCase({cardSliderList, titleMessage, excerpt, ctaText}) {
             <br/>
             <div style={excerptStyle}>{excerpt}</div>
             <br/>
-            <div style={ctaBtnStyle}><OutlineButton text={ctaText} /></div>
+            <div style={ctaBtnStyle}><Button text={ctaText} /></div>
             <CardSlider data={cardSliderList} />
         </div>
     </Center>  
