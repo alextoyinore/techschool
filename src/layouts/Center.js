@@ -6,7 +6,7 @@ function Center(props) {
   }
   
   const centerStyle = {
-    width: '80%',
+    width: props.width,
     margin: 'auto',
   }
   return (

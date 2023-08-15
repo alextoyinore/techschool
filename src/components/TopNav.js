@@ -1,17 +1,10 @@
 import React from 'react'
 import NavItem from '../widgets/NavItem'
-import SearchField from '../widgets/SearchField'
 import SiteBrand from '../widgets/SiteBrand'
 import OutlineButton from '../widgets/OutlineButton'
 import Local from '../data/Local'
 
 function TopNav() {
-    const topNavItemListStyle = {
-        display: 'flex',
-        gap: '2rem',
-        width: '45%',
-    }
-
     const topnavStyle = {
         display: 'flex',
         justifyContent: 'space-between',
@@ -21,10 +14,6 @@ function TopNav() {
         height: '10vh',
         alignItems: 'center',
         alignContent: 'center',
-    }
-
-    const topnavSearchStyle = {
-        width: '25%',
     }
 
     const topnavCtaStyle = {
@@ -38,7 +27,7 @@ function TopNav() {
         top:'0', 
         background: 'white', 
         boxShadow: '0 0 2rem #0003',
-        zIndex: '1',
+        zIndex: '999',
     }
 
     const topLineNavStyle = {

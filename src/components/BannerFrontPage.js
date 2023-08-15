@@ -1,6 +1,7 @@
 import React from 'react'
-import SearchField from '../widgets/SearchField'
+import Center from '../layouts/Center'
 import BannerBG from '../assets/images/bannerBG.png'
+import InputField from '../widgets/InputField'
 
 function BannerFrontPage({image=BannerBG}) {
     const frontBannerStyle = {
@@ -28,9 +29,11 @@ function BannerFrontPage({image=BannerBG}) {
     }
 
     const fontBannerContentStyle = {
-        width: '50%',
+        width: '100%',
         margin: 'auto',
         zIndex: '1',
+        position: 'absolute',
+        top: '0',
     }
 
     const frontBannerContentImage = {
@@ -59,15 +62,17 @@ function BannerFrontPage({image=BannerBG}) {
   return (
     <div style={frontBannerStyle}>
         <div style={frontBannerDecorationStyle}>
-            <div style={fontBannerContentStyle}>
-                <h1 style={h1Style}>
-                    Powering the Future <br/>of African Wealth
-                </h1>
-                <br/><br/>
-                <SearchField hintText='Search Courses' />
-            </div>
             <div style={frontBannerContentImage}>
                 <img style={frontBannerContentImage.img} alt='' src={image} />
+            </div>
+            <div style={fontBannerContentStyle}>
+                <Center width='40%'>
+                    <h1 style={h1Style}>
+                        Powering the Future <br/>of African Wealth
+                    </h1>
+                    <br/><br/>
+                    <InputField hintText='Search Courses' icon='search' />
+                </Center>
             </div>
         </div>
     </div>

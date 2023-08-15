@@ -1,7 +1,6 @@
 import React from 'react'
 import VerticalCourseCard from './VerticalCourseCard'
 import NavItem from '../widgets/NavItem'
-import Center from '../layouts/Center'
 import Row from '../layouts/Row'
 
 function CardSlider({title, data}) {

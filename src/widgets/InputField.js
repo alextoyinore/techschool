@@ -1,28 +1,37 @@
 import React from 'react'
 
 function InputField(
-    {hintText, type, labelText, id, name, isRequired, value, isSearch}
-    ) {
+    {
+      hintText, type, icon,
+      labelText, id, name, 
+      height='3rem', width, 
+      required, value, 
+      borderRadius, iconAction,
+    }) {
       const styles = {
-        borderRadius: isSearch ? '.5rem 0 0 .5rem' : '.5rem',
-        height: (isSearch || type==='submit') ? '3.2rem' : '2.75rem'
+        borderRadius: borderRadius,
+        width: width,
       }
 
       const inputStyle = {
-        width: '100%'
+        width: '100%',
+        height: height,
       }
   return (
     <div style={inputStyle}>
         { labelText && <label className='labelText' htmlFor={id}>{labelText}</label>}
-        <input 
-            style={styles}
-            className='ts-input'
-            placeholder={hintText}
-            type={type}
-            id={id}
-            name={name}
-            value={value}
-        />
+        <div>
+          <input 
+              style={inputStyle}
+              className='ts-input'
+              placeholder={hintText}
+              type={type}
+              id={id}
+              name={name}
+              required={required}
+              value={value}/>
+        </div>
+        <span onClick={iconAction} className="material-symbols-outlined">{icon}</span>
     </div>
   )
 }

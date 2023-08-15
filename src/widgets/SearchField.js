@@ -4,9 +4,6 @@ import Button from './Button'
 
 function SearchField({hintText, text='Search'}) {
     const searchFieldStyles = {
-        display: 'flex',
-        alignContent: 'center',
-        alignItems: 'center',
         width: '100%',
         height: '2.75rem',
     }
@@ -22,7 +19,7 @@ function SearchField({hintText, text='Search'}) {
   return (
     <div style={searchFieldStyles}>
         <InputField style={fieldStyle} hintText={hintText} isSearch='true' />
-        <Button style={btnStyle} text={text} isSearch='true' />
+        {/* <Button style={btnStyle} text={text} isSearch='true' /> */}
     </div>
   )
 }

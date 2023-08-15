@@ -1,28 +1,47 @@
 import React from 'react'
+import Center from '../layouts/Center'
+import Row from '../layouts/Row'
 
-function Button({text, isSearch, clicked, fontWeight, fontSize='1rem', icon='chevron_right'}) {
-  if(isSearch){
-    icon = 'search'
-  }
+function Button(
+  {
+    text, 
+    clickAction, 
+    fontWeight, 
+    fontSize='1rem', 
+    icon='chevron_right', 
+    disabled, 
+    height='3.3rem',
+    borderRadius='.5rem',
+    padding,
+    width,
+  }) {
   
-  const styles = {
-    display: isSearch ? 'block' : 'flex',
+  const btnStyles = {
+    display: 'flex',
     justifyContent: 'space-between',
-    padding: isSearch ? '.5rem 1rem' : '1rem 1rem',
+    alignItems: 'center',
+    alignContent: 'center',
+    padding: padding,
     fontSize: fontSize,
     fontWeight: fontWeight,
-    borderRadius: isSearch ? '0 .5rem .5rem 0' : '.5rem',
-    height: isSearch && '3.3rem'
+    borderRadius: borderRadius,
+    height: height,
+    width: width,
   }
 
   return (
     <div>
       <button
-          style={icon && styles}
-          onClick={clicked} 
+          style={btnStyles}
+          onClick={clickAction}
+          disabled={disabled} 
           className='ts-btn'>
-            {!isSearch && <span>{text}</span>}
-            <span className="material-symbols-outlined">{icon}</span>
+            <Center width='80%'>
+              <Row>
+                {text && <span>{text}</span>}
+                {icon && <span className="material-symbols-outlined">{icon}</span>}
+              </Row>
+            </Center>
       </button>
     </div>
     
