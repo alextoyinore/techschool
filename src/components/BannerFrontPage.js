@@ -35,8 +35,9 @@ function BannerFrontPage({image=BannerBG}) {
 
     const frontBannerContentImage = {
 
-        // width: '100%',
-        // height: '50vh',
+        width: '100%',
+        height: '50vh',
+        overflow: 'hidden',
 
         img : {
             display: 'block',
@@ -51,7 +52,7 @@ function BannerFrontPage({image=BannerBG}) {
             height: '60%',
             transform: 'rotate3d(1, 1, 1, 30deg)',
             transformStyle: 'preserve-3d',
-            scale: '1.5',
+            scale: '.65',
         }
     }
 

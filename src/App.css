@@ -301,17 +301,17 @@ textarea{
 
 
 /* Top Nav*/
-.topnav-item{
+.nav-item{
     display: flex; 
     width: 100%; 
-    place-content: center space-between; 
+    place-content: center flex-start; 
     align-items: center; 
     font-size: 1rem; 
     font-weight: light;
     cursor: pointer;
 }
 
-.topnav-item:hover:hover, .topnav-item:focus{
+.nav-item:hover:hover, .nav-item:focus{
     color: rgb(11, 87, 221);
 }
 /* End Top Nav */

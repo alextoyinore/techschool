@@ -1,6 +1,6 @@
 import React from 'react'
-import CourseCardVertical from './CourseCardVertical'
-import TopNavItem from '../widgets/TopNavItem'
+import VerticalCourseCard from './VerticalCourseCard'
+import NavItem from '../widgets/NavItem'
 import Center from '../layouts/Center'
 import Row from '../layouts/Row'
 
@@ -19,12 +19,12 @@ function CardSlider({title, data}) {
         <Row>
         <h3 style={{fontWeight: 'lighter'}}>{title}</h3>
             {title && <div style={seeAllStyle}>
-                <TopNavItem text='See All' icon='chevron_right' />
+                <NavItem text='See All' icon='chevron_right' />
             </div>}
         </Row>
         <br/>
         <Row>
-            {data.map((d)=><CourseCardVertical cardData={d} />)}
+            {data.map((d)=><VerticalCourseCard cardData={d} />)}
         </Row>
         <br/>
     </div>

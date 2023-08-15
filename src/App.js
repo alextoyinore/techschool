@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <TopNav />
-      <BannerFrontPage /><br/>
+      <BannerFrontPage /><br/><br/>
       <Center>
         <CardSlider title='Latest Courses' data={Local.latestData} />
       </Center>

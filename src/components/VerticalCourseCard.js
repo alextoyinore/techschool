@@ -1,8 +1,8 @@
 import React from 'react'
 
-function CourseCardVertical({cardData}) {
+function VerticalCourseCard({cardData}) {
     const cardStyle = {
-        width: '11rem',
+        width: '14.426%',
         height: '16rem',
         border: '1px solid #eee',
         borderRadius: '.3rem',
@@ -37,5 +37,5 @@ function CourseCardVertical({cardData}) {
   )
 }
 
-export default CourseCardVertical
+export default VerticalCourseCard
 

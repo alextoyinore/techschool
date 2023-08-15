@@ -1,5 +1,5 @@
 import React from 'react'
-import TopNavItem from '../widgets/TopNavItem'
+import NavItem from '../widgets/NavItem'
 import SearchField from '../widgets/SearchField'
 import SiteBrand from '../widgets/SiteBrand'
 import OutlineButton from '../widgets/OutlineButton'
@@ -63,7 +63,7 @@ function TopNav() {
     <div style={topnavContainerStyle}>
         <div style={topLineNavStyle}>
             <div style={topLineNavContentStyle}>
-                {Local.listItems.map((item) => <TopNavItem color='white' text={item} />)}
+                {Local.listItems.map((item) => <NavItem color='white' text={item} />)}
             </div>
         </div>
         <div style={topnavStyle}>
