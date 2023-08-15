@@ -25,7 +25,7 @@ function BannerFrontPage({image=BannerBG}) {
         color:'white', 
         lineHeight: '4.6rem', 
         fontWeight: 'light',
-        marginTop: '8rem',
+        marginTop: '8.5rem',
         textAlign: 'center'
     }
 

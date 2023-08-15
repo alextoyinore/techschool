@@ -1,15 +1,16 @@
 import React from 'react'
-import CourseCardVertical from '../widgets/CourseCardVertical'
+import CourseCardVertical from './CourseCardVertical'
 import TopNavItem from '../widgets/TopNavItem'
-import Center from './Center'
+import Center from '../layouts/Center'
 
 function CardSlider({title, data}) {
     
     const cardSlider = {
         display: 'flex', 
         gap:'2.2rem', 
-        flexWrap: 'wrap', 
-        justifyContent: 'flex-start'
+        flexWrap: 'wrap',
+        justifyContent: 'flex-start',
+        // overflow: 'hidden',
     }
 
     const cardSliderHeader = {

@@ -110,6 +110,12 @@ const Local = {
             courseGrade: 'Intermediate',
             courseTitle: 'Advanced Photoshop: Graphics Design in 2023'
         },
+        {
+            img: 'https://cdn.pixabay.com/photo/2015/10/18/18/07/android-994910_1280.jpg',
+            courseDuration: '4.5 months',
+            courseGrade: 'Advanced',
+            courseTitle: 'Hands-on Introduction to Linux Commands and Shell Scripting'
+        },
       ],
 
       showCaseData : [
