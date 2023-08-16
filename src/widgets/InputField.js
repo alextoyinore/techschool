@@ -12,9 +12,6 @@ function InputField(
 
       if(type==='password'){
         icon = 'visibility'
-        icon.addEventListener('click', ()=>{
-          this.value = value
-        })
       }
 
       const inputStyleContainer = {
@@ -29,9 +26,10 @@ function InputField(
 
       const iconStyle = {
         position: 'relative',
-        left: '94%',
-        top: '-2.1rem',
-        color: '#aaa',
+        left: '93%',
+        top: '-2.2rem',
+        color: '#999',
+        cursor: 'pointer',
       }
 
   return (

@@ -1,33 +1,46 @@
 import React from 'react'
+import Row from '../layouts/Row'
 
-function OutlineButton({text, isSearch, clicked, fontWeight, fontSize='1rem', icon='chevron_right'}) {
-  if(isSearch){
-    icon = 'search'
-  }
-
-  const outlineBtnStyle = {
-    display: isSearch ? 'block' : 'flex',
-    alignContent: 'center',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '.75rem 1rem',
+function OutlineButton(
+  {
+    text, 
+    clickAction, 
+    fontWeight, 
+    fontSize='1rem', 
+    icon='chevron_right', 
+    disabled, 
+    height='3.3rem',
+    borderRadius='.5rem',
+    padding='0 1rem',
+    width,
+    color = 'rgb(11, 87, 221)',
+    border = '1px solid rgb(11, 87, 221)',
+    active,
+  }) {    
+  
+  const btnStyle = {
+    padding: padding,
     fontSize: fontSize,
     fontWeight: fontWeight,
-    borderRadius: isSearch ? '0 .5rem .5rem 0' : '.5rem',
-    outline: '1px solid',
+    borderRadius: borderRadius,
+    height: height,
+    width: width,
+    color: color,
+    border: border,
+    backgroundColor:  active ? 'rgb(11, 87, 221)' :'transparent'
   }
 
   return (
-    <div>
-      <button
-          style={icon && outlineBtnStyle}
-          onClick={clicked} 
-          className='ts-btn-outline'>
-         {!isSearch && <span>{text}</span>}
-         <span className="material-symbols-outlined">{icon}</span>
-      </button>
-    </div>
-    
+    <button
+        style={btnStyle}
+        onClick={clickAction}
+        disabled={disabled} 
+        className='ts-btn-outline'>
+            <Row justify='space-between'>
+              {text && <span>{text}</span>}
+              {icon && <span className="material-symbols-outlined">{icon}</span>}
+            </Row>
+    </button>
   )
 }
 

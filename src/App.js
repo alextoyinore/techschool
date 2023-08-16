@@ -15,6 +15,14 @@ function App() {
       <TopNav />
       <BannerFrontPage /><br/><br/>
       <Center width='80%'>
+        <ShowCase 
+        cardSliderList={Local.showCaseData} 
+        titleMessage='Expand your career opportunites'
+        excerpt={AppConstants.exploreDummy}
+        btnText='Explore Now' />
+      </Center>
+      <br/><hr/><br/>
+      <Center width='80%'>
         <CardSlider title='Latest Courses' data={Local.latestData} />
       </Center>
       <br/> <hr/> <br/>
@@ -24,14 +32,6 @@ function App() {
       <br/> <hr/> <br/>
       <Center width='80%'>
         <CardSlider title='Projectstar for Students' data={Local.studentData} />
-      </Center>
-      <br/> <hr/> <br/>
-      <Center width='80%'>
-        <ShowCase 
-        cardSliderList={Local.showCaseData} 
-        titleMessage='Expand your career opportunites'
-        excerpt={AppConstants.exploreDummy}
-        ctaText='Explore Now' />
       </Center>
       <br/> <hr/> <br/>
     </div>

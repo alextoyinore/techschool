@@ -25,7 +25,7 @@ function VerticalCourseCard({cardData}) {
     }
 
   return (
-    <article style={cardStyle}>
+    <article className='vertical-course-card' style={cardStyle}>
         <img style={cardImgStyle} 
         src={cardData.img} 
         alt={cardData.courseTitle} />

@@ -14,37 +14,34 @@ function Button(
     borderRadius='.5rem',
     padding,
     width,
+    color = '#fff',
+    backgroundImage = 'linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221))'
   }) {
   
-  const btnStyles = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    alignContent: 'center',
+  const btnStyle = {
     padding: padding,
     fontSize: fontSize,
     fontWeight: fontWeight,
     borderRadius: borderRadius,
+    backgroundImage: backgroundImage,
     height: height,
     width: width,
+    color: color,
   }
 
   return (
-    <div>
-      <button
-          style={btnStyles}
-          onClick={clickAction}
-          disabled={disabled} 
-          className='ts-btn'>
-            <Center width='80%'>
-              <Row>
-                {text && <span>{text}</span>}
-                {icon && <span className="material-symbols-outlined">{icon}</span>}
-              </Row>
-            </Center>
-      </button>
-    </div>
-    
+    <button
+        style={btnStyle}
+        onClick={clickAction}
+        disabled={disabled} 
+        className='ts-btn'>
+          <Center>
+            <Row justify='space-between'>
+              {text && <span>{text}</span>}
+              {icon && <span className="material-symbols-outlined">{icon}</span>}
+            </Row>
+          </Center>
+    </button>
   )
 }
 

@@ -6,7 +6,7 @@ import InputField from '../widgets/InputField'
 function BannerFrontPage({image=BannerBG}) {
     const frontBannerStyle = {
         width: '100%',
-        height: '50vh',
+        height: '50%',
         backgroundImage: 'linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221))',
         alignContent: 'center',
         alignItems: 'center',
@@ -31,7 +31,6 @@ function BannerFrontPage({image=BannerBG}) {
     const fontBannerContentStyle = {
         width: '100%',
         margin: 'auto',
-        zIndex: '1',
         position: 'absolute',
         top: '0',
     }
@@ -70,7 +69,7 @@ function BannerFrontPage({image=BannerBG}) {
                     <h1 style={h1Style}>
                         Powering the Future <br/>of African Wealth
                     </h1>
-                    <br/><br/>
+                    <br/>
                     <InputField hintText='Search Courses' icon='search' />
                 </Center>
             </div>

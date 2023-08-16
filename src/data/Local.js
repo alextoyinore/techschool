@@ -159,6 +159,12 @@ const Local = {
         'Kids Zone', 'For Students', 'For Undergrads', 'For Women'
     ],
 
+    topics : [
+        'Python', 'JavaScript', 'Php', 'Java',
+        'Flutter', 'Dart', 'React', 'React Native',
+        'Go', 'CSS', 'Typescript', 'Kotlin', 'C', 'C++'
+    ],
+
     authItems : [
         'Browse Programs',
         '|', 'Login'

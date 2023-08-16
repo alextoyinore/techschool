@@ -16,10 +16,6 @@ function TopNav() {
         alignContent: 'center',
     }
 
-    const topnavCtaStyle = {
-        width: '15%'
-    }
-
     const topnavContainerStyle = {
         width: '100%', 
         position: 'fixed', 
@@ -57,9 +53,7 @@ function TopNav() {
         </div>
         <div style={topnavStyle}>
             <SiteBrand />
-            <div style={topnavCtaStyle}>
-                <OutlineButton text='Get Started' />
-            </div> 
+            <OutlineButton border='1.5px solid' width='17.5%' padding='0 2rem' text='Get Started' />
         </div>
     </div>
   )

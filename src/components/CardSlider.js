@@ -15,14 +15,14 @@ function CardSlider({title, data}) {
 
   return (
     <div style={cardSliderContaierStyle}>
-        <Row>
+        <Row gap='1rem'>
         <h3 style={{fontWeight: 'lighter'}}>{title}</h3>
             {title && <div style={seeAllStyle}>
                 <NavItem text='See All' icon='chevron_right' />
             </div>}
         </Row>
         <br/>
-        <Row>
+        <Row gap='2rem'>
             {data.map((d)=><VerticalCourseCard cardData={d} />)}
         </Row>
         <br/>
