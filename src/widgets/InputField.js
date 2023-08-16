@@ -4,23 +4,39 @@ function InputField(
     {
       hintText, type, icon,
       labelText, id, name, 
-      height='3rem', width, 
+      height='3rem', 
+      width, 
       required, value, 
       borderRadius, iconAction,
     }) {
-      const styles = {
-        borderRadius: borderRadius,
-        width: width,
+
+      if(type==='password'){
+        icon = 'visibility'
+        icon.addEventListener('click', ()=>{
+          this.value = value
+        })
       }
 
-      const inputStyle = {
+      const inputStyleContainer = {
         width: '100%',
         height: height,
       }
+
+      const inputStyle = {
+        borderRadius: borderRadius,
+        height: height,
+      }
+
+      const iconStyle = {
+        position: 'relative',
+        left: '94%',
+        top: '-2.1rem',
+        color: '#aaa',
+      }
+
   return (
-    <div style={inputStyle}>
+        <div style={inputStyleContainer}>
         { labelText && <label className='labelText' htmlFor={id}>{labelText}</label>}
-        <div>
           <input 
               style={inputStyle}
               className='ts-input'
@@ -30,9 +46,8 @@ function InputField(
               name={name}
               required={required}
               value={value}/>
+          {icon && <span onClick={iconAction} style={iconStyle} className="material-symbols-outlined">{icon}</span>}
         </div>
-        <span onClick={iconAction} className="material-symbols-outlined">{icon}</span>
-    </div>
   )
 }
 

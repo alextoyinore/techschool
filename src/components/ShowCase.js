@@ -1,5 +1,4 @@
 import React from 'react'
-import Center from '../layouts/Center'
 import Button from '../widgets/Button'
 import CardSlider from './CardSlider'
 
