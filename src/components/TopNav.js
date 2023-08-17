@@ -3,17 +3,15 @@ import NavItem from '../widgets/NavItem'
 import SiteBrand from '../widgets/SiteBrand'
 import OutlineButton from '../widgets/OutlineButton'
 import Local from '../data/Local'
+import Row from '../layouts/Row'
+import Center from '../layouts/Center'
+import Container from '../layouts/Container'
 
 function TopNav() {
     const topnavStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        gap: '2rem',
         width: '80%',
         margin: 'auto',
-        height: '10vh',
-        alignItems: 'center',
-        alignContent: 'center',
+        height: '90px',
     }
 
     const topnavContainerStyle = {
@@ -51,12 +49,17 @@ function TopNav() {
                 {Local.listItems.map((item) => <NavItem color='white' text={item} />)}
             </div>
         </div>
-        <div style={topnavStyle}>
-            <SiteBrand />
-            <OutlineButton border='1.5px solid' width='17.5%' padding='0 2rem' text='Get Started' />
-        </div>
+        <Container padding='1rem 0' height='90px'>
+            <Center width='80%'>
+                <Row justify='space-between'>
+                    <SiteBrand />
+                    <OutlineButton border='1.5px solid' width='17.5%' padding='0 2rem' text='Get Started' />
+                </Row>
+            </Center>
+        </Container>
     </div>
   )
 }
 
 export default TopNav
+

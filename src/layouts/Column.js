@@ -12,6 +12,7 @@ function Column(props) {
     })
   return (
     <div style={columnProperties.containerStyle}>
+        {props.title && <h3>{props.title}</h3>}
         {props.children}
     </div>
   )

@@ -9,7 +9,7 @@ function Row(props) {
         flexWrap: 'wrap',
         justifyContent: !props.justify ? 'flex-start' : props.justify,
         alignContent: 'center',
-        alignItems: 'center',
+        alignItems: props.align ? 'top' : 'center',
     }
 
   return (

@@ -10,6 +10,7 @@ function ShowCase({cardSliderList, titleMessage, excerpt, btnText}) {
         border: '1px solid #eee',
         borderRadius: '.5rem',
         padding: '2rem',
+        background: '#eee3',
     }
 
     const excerptStyle = {
