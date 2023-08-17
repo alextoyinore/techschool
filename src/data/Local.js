@@ -116,6 +116,12 @@ const Local = {
             courseGrade: 'Advanced',
             courseTitle: 'Hands-on Introduction to Linux Commands and Shell Scripting'
         },
+        {
+            img: 'https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345_1280.jpg',
+            courseDuration: '1 months',
+            courseGrade: 'Beginner',
+            courseTitle: 'Get Started with Python Programming and Automation'
+        },
       ],
 
       showCaseData : [
@@ -152,6 +158,12 @@ const Local = {
             courseGrade: 'Advanced',
             courseTitle: 'Advanced Photoshop: Graphics Design in 2022'
         },
+        // {
+        //     img: 'https://cdn.pixabay.com/photo/2020/03/09/15/59/scifi-4916165_1280.jpg',
+        //     courseDuration: '5 months',
+        //     courseGrade: 'Intermediate',
+        //     courseTitle: 'Logo Design and Expertise with Adobe Illustrator 2023'
+        // },
       ],
 
        // data

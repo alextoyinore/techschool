@@ -4,6 +4,7 @@ function Row(props) {
 
     const rowStyle = {
         display: 'flex',
+        flexDirection: 'row',
         gap: props.gap,
         flexWrap: 'wrap',
         justifyContent: !props.justify ? 'flex-start' : props.justify,

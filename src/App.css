@@ -83,6 +83,7 @@ input[type=submit]:hover{
 .ts-btn-outline:hover{
     background-image: linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221));
     color: #fff;
+    outline: 0;
 }
 
 .ts-input, select{

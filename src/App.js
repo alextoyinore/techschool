@@ -8,6 +8,7 @@ import Local from './data/Local'
 import AppConstants from './data/Constants'
 import ShowCase from './components/ShowCase';
 import Center from './layouts/Center';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -34,6 +35,11 @@ function App() {
         <CardSlider title='Projectstar for Students' data={Local.studentData} />
       </Center>
       <br/> <hr/> <br/>
+      <Center width='80%'>
+        <CardSlider title='Projectstar for Undergrads' data={Local.showCaseData} />
+      </Center>
+      <br/><br/>
+      <Footer />
     </div>
   );
 }

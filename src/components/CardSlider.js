@@ -16,7 +16,7 @@ function CardSlider({title, data}) {
   return (
     <div style={cardSliderContaierStyle}>
         <Row gap='1rem'>
-        <h3 style={{fontWeight: 'lighter'}}>{title}</h3>
+            <h3 style={{fontWeight: 'lighter'}}>{title}</h3>
             {title && <div style={seeAllStyle}>
                 <NavItem text='See All' icon='chevron_right' />
             </div>}
