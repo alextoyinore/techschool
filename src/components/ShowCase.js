@@ -14,7 +14,7 @@ function ShowCase({cardSliderList, titleMessage, excerpt, btnText}) {
     }
 
     const excerptStyle = {
-        width: '80%',
+        width: '85%',
         color: '#777',
         lineHeight: '1.3rem',
         fontSize: '.9rem',
@@ -31,22 +31,17 @@ function ShowCase({cardSliderList, titleMessage, excerpt, btnText}) {
                 <OutlineButton 
                 text={item} 
                 icon='' 
-                padding='0 1rem'
-                outline='.1rem solid rgb(11, 87, 221)'
-                color='rgb(11, 87, 221)'
                 borderRadius='.5rem'
                 height='1.75rem' 
                 fontSize='.75rem' />
             )}
         </Row>
-        <br/>
-        <hr/>
-        <br/>
+        <br/><hr/><br/>
         <h2 style={showCaseTitleStyle}>{titleMessage}</h2>
         <br/>
         <div style={excerptStyle}>{excerpt}</div>
         <br/>
-        <Button border='0' width='17.5%' padding='0 2rem' text={btnText} />
+        <Button border='0' width='17.5%' padding='0 2rem' text={btnText} /><br/>
         <CardSlider data={cardSliderList} />
     </div> 
   )

@@ -14,8 +14,9 @@ function App() {
   return (
     <div className="App">
       <TopNav />
-      <BannerFrontPage /><br/><br/>
-      <Center width='80%'>
+      <BannerFrontPage />
+      <br/><br/>
+      <Center width='75%'>
         <ShowCase 
         cardSliderList={Local.showCaseData} 
         titleMessage='Expand your career opportunites'
@@ -23,23 +24,25 @@ function App() {
         btnText='Explore Now' />
       </Center>
       <br/><hr/><br/>
-      <Center width='80%'>
+      <Center width='75%'>
         <CardSlider title='Latest Courses' data={Local.latestData} />
       </Center>
       <br/> <hr/> <br/>
-      <Center width='80%'>
+      <Center width='75%'>
         <CardSlider title='Projectstar for Women' data={Local.womenData} />
       </Center>
       <br/> <hr/> <br/>
-      <Center width='80%'>
+      <Center width='75%'>
         <CardSlider title='Projectstar for Students' data={Local.studentData} />
       </Center>
       <br/> <hr/> <br/>
-      <Center width='80%'>
+      <Center width='75%'>
         <CardSlider title='Projectstar for Undergrads' data={Local.showCaseData} />
       </Center>
-      <br/><br/>
-      <Footer />
+      <br/><hr/><br/>
+      <Center width='75%'>
+        <Footer />
+      </Center>
     </div>
   );
 }

@@ -6,10 +6,11 @@ function Row(props) {
         display: 'flex',
         flexDirection: 'row',
         gap: props.gap,
-        flexWrap: 'wrap',
+        flexWrap: props.wrap ? props.wrap : 'wrap',
         justifyContent: !props.justify ? 'flex-start' : props.justify,
         alignContent: 'center',
         alignItems: props.align ? 'top' : 'center',
+        width: props.width,
     }
 
   return (
@@ -20,3 +21,4 @@ function Row(props) {
 }
 
 export default Row
+

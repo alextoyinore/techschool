@@ -33,14 +33,13 @@ function TopNav() {
     }
 
     const topLineNavContentStyle = {
-        width: '45%',
+        width: '75%',
         margin: 'auto',
         display: 'flex',
         gap: '2rem',
         alignContent: 'center',
         alignItems: 'center',
     }
-
 
   return (
     <div style={topnavContainerStyle}>
@@ -50,10 +49,14 @@ function TopNav() {
             </div>
         </div>
         <Container padding='1rem 0' height='90px'>
-            <Center width='80%'>
+            <Center width='75%'>
                 <Row justify='space-between'>
                     <SiteBrand />
-                    <OutlineButton border='1.5px solid' width='17.5%' padding='0 2rem' text='Get Started' />
+                    <Row width='28%' justify='space-between'>
+                        <NavItem text='Explore' /> |
+                        <NavItem text='Sign in' icon='' />
+                        <OutlineButton outline='2px solid'  padding='0 2rem' text='Get Started' />
+                    </Row>
                 </Row>
             </Center>
         </Container>

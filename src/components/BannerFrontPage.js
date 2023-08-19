@@ -30,7 +30,7 @@ function BannerFrontPage({image=BannerBG}) {
 
     const fontBannerContentStyle = {
         width: '100%',
-        margin: 'auto',
+        marginTop: '20px',
         position: 'absolute',
         top: '0',
     }
@@ -38,7 +38,7 @@ function BannerFrontPage({image=BannerBG}) {
     const frontBannerContentImage = {
 
         width: '100%',
-        height: '50vh',
+        height: '450px',
         overflow: 'hidden',
 
         img : {
@@ -51,8 +51,8 @@ function BannerFrontPage({image=BannerBG}) {
             alignContent: 'center',
             alignItems: 'center',
             objectFit: 'cover',
-            height: '60%',
-            transform: 'rotate3d(1, 1, 1, 30deg)',
+            height: '540px',
+            transform: 'rotate3d(1, 1, 1, 0deg)',
             transformStyle: 'preserve-3d',
             scale: '.65',
         }
@@ -69,8 +69,8 @@ function BannerFrontPage({image=BannerBG}) {
                     <h1 style={h1Style}>
                         Powering the Future <br/>of African Wealth
                     </h1>
-                    <br/>
-                    <InputField hintText='Search Courses' icon='search' />
+                    <br/><br/>
+                    <InputField height='50px' hintText='Search Courses' icon='search' />
                 </Center>
             </div>
         </div>

@@ -26,7 +26,7 @@ function InputField(
 
       const iconStyle = {
         position: 'relative',
-        left: '93%',
+        left: '95%',
         top: '-2.2rem',
         color: '#999',
         cursor: 'pointer',

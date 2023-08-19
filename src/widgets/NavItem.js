@@ -1,8 +1,10 @@
 import React from 'react'
 
-function NavItem({text, icon='expand_more', color, action}) {
+function NavItem({text, icon='expand_more', color, fontSize, textTransform, action}) {
     const topnavStyle = {
         color: color ,
+        fontSize: fontSize,
+        textTransform: textTransform,
     }
   return (
     <div style={topnavStyle} className='nav-item'>
@@ -13,3 +15,4 @@ function NavItem({text, icon='expand_more', color, action}) {
 }
 
 export default NavItem
+

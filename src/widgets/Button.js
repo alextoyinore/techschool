@@ -14,8 +14,7 @@ function Button(
     borderRadius='.5rem',
     padding,
     width,
-    color = '#fff',
-    backgroundImage = 'linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221))'
+    color,
   }) {
   
   const btnStyle = {
@@ -23,7 +22,6 @@ function Button(
     fontSize: fontSize,
     fontWeight: fontWeight,
     borderRadius: borderRadius,
-    backgroundImage: backgroundImage,
     height: height,
     width: width,
     color: color,

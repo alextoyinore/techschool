@@ -13,8 +13,8 @@ function OutlineButton(
     borderRadius='.5rem',
     padding='0 1rem',
     width,
-    color = 'rgb(11, 87, 221)',
-    border = '1px solid rgb(11, 87, 221)',
+    color,
+    outline,
     active,
   }) {    
   
@@ -25,9 +25,10 @@ function OutlineButton(
     borderRadius: borderRadius,
     height: height,
     width: width,
+    outline: outline,
     color: color,
-    border: border,
-    backgroundColor:  active ? 'rgb(11, 87, 221)' :'transparent'
+    active: active,
+    backgroundColor:'transparent'
   }
 
   return (
