@@ -1,6 +1,6 @@
 import React from 'react'
 
-function VerticalCourseCard({cardData}) {
+function VerticalCourseCard({cardData, ...props}) {
     const cardStyle = {
         // width: '14.426%',
         // height: '16rem',
@@ -25,7 +25,7 @@ function VerticalCourseCard({cardData}) {
     }
 
   return (
-    <article className='vertical-course-card' style={cardStyle}>
+    <article onDrag={props.onDrag} className='vertical-course-card' style={cardStyle}>
         <img style={cardImgStyle} className='card-img'
         src={cardData.img} 
         alt={cardData.courseTitle} />

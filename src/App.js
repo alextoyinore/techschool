@@ -3,12 +3,12 @@ import './App.css';
 import './assets/styles/Loading.css'
 import TopNav from './components/TopNav';
 import BannerFrontPage from './components/BannerFrontPage';
-import CardSlider from './components/CardSlider';
 import Local from './data/Local'
 import AppConstants from './data/Constants'
 import ShowCase from './components/ShowCase';
 import Center from './layouts/Center';
 import Footer from './components/Footer';
+import CourseCardCarousel from './components/CourseCardCarousel';
 
 function App() {
   return (
@@ -25,19 +25,19 @@ function App() {
       </Center>
       <br/><hr/><br/>
       <Center width='75%'>
-        <CardSlider title='Latest Courses' data={Local.latestData} />
+        <CourseCardCarousel title='Latest Courses' data={Local.latestData} />
       </Center>
       <br/> <hr/> <br/>
       <Center width='75%'>
-        <CardSlider title='Projectstar for Women' data={Local.womenData} />
+        <CourseCardCarousel title='Projectstar for Women' data={Local.womenData} />
       </Center>
       <br/> <hr/> <br/>
       <Center width='75%'>
-        <CardSlider title='Projectstar for Students' data={Local.studentData} />
+        <CourseCardCarousel title='Projectstar for Students' data={Local.studentData} />
       </Center>
       <br/> <hr/> <br/>
       <Center width='75%'>
-        <CardSlider title='Projectstar for Undergrads' data={Local.showCaseData} />
+        <CourseCardCarousel title='Projectstar for Undergrads' data={Local.showCaseData} />
       </Center>
       <br/><hr/><br/>
       <Center width='75%'>

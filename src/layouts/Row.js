@@ -6,15 +6,18 @@ function Row(props) {
         display: 'flex',
         flexDirection: 'row',
         gap: props.gap,
-        flexWrap: props.wrap ? props.wrap : 'wrap',
+        position: 'relative',
+        flexWrap: props.wrap == 'nowrap' ? props.wrap : 'wrap',
+        overflow: props.wrap == 'nowrap' ? 'hidden' : props.overflow,
         justifyContent: !props.justify ? 'flex-start' : props.justify,
         alignContent: 'center',
         alignItems: props.align ? 'top' : 'center',
+        scrollBehavior: 'auto',
         width: props.width,
     }
 
   return (
-    <div style={rowStyle}>
+    <div onDrag={props.onDrag} style={rowStyle}>
         {props.children}
     </div>
   )

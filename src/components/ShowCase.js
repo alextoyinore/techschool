@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../widgets/Button'
-import CardSlider from './CardSlider'
+import CardSlider from './CourseCardCarousel'
 import Row from '../layouts/Row'
 import Local from '../data/Local'
 import OutlineButton from '../widgets/OutlineButton'

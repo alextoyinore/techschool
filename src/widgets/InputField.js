@@ -17,6 +17,7 @@ function InputField(
       const inputStyleContainer = {
         width: '100%',
         height: height,
+        position: 'relative'
       }
 
       const inputStyle = {
@@ -25,9 +26,9 @@ function InputField(
       }
 
       const iconStyle = {
-        position: 'relative',
-        left: '95%',
-        top: '-2.2rem',
+        position: 'absolute',
+        right: '1.5%',
+        transform: 'translateY(50%)',
         color: '#999',
         cursor: 'pointer',
       }

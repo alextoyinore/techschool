@@ -350,7 +350,6 @@ textarea{
 }
 /* End Top Nav */
 
-
 /* Vertical Course Card */
 .vertical-course-card {
     width: 200px; 
@@ -370,6 +369,7 @@ textarea{
     width: 100%; 
     object-fit: cover; 
     border-radius: 0.3rem 0.3rem 0px 0px;
+    user-select: none;
 }
 
 .card-info {
@@ -377,7 +377,7 @@ textarea{
     display: flex; 
     justify-content: space-between; 
     flex-direction: column; 
-    height: 7.5rem;
+    height: 8rem;
 }
 
 .card-info h3 {
@@ -394,8 +394,40 @@ textarea{
 
 /* End Vertical Course Card */
 
+
+/* Course Card Carousel */
+
 .slider-navs span:hover {
     color: rgb(255, 255, 255); 
     background-image: linear-gradient(to right, rgb(8, 71, 184), rgb(11, 87, 221));
 }
 
+
+#left-scroller {
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#right-scroller {
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+#cards-wrapper:hover {
+    cursor: drag;
+}
+
+/* End Card Slider */
+
+/* Carousel */
+
+.carousel {
+    display: flex; 
+    gap: 2rem; 
+    cursor: grab; 
+    scroll-behavior: auto;
+    position: relative;
+}
